@@ -21,7 +21,7 @@ public class MovieInformationThird extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_information_third);
-        if(getIntent().getExtras()!=null){
+        if (getIntent().getExtras() != null) {
             movie = (Movie) getIntent().getSerializableExtra("movie");
         }
         webView = findViewById(R.id.webview);
@@ -32,25 +32,14 @@ public class MovieInformationThird extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl(movie.getUrl());
 
-        refreshButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                webView.reload();
-            }
-        });
+        refreshButton.setOnClickListener(v -> webView.reload());
 
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               if(webView.canGoBack()) webView.goBack();
-            }
+        backButton.setOnClickListener(v -> {
+            if (webView.canGoBack()) webView.goBack();
         });
-        forwardButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(webView.canGoForward()){
-                    webView.goForward();
-                }
+        forwardButton.setOnClickListener(v -> {
+            if (webView.canGoForward()) {
+                webView.goForward();
             }
         });
     }

@@ -25,7 +25,7 @@ public class MovieInformationSecond extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_information_second);
 
-        if(getIntent().getExtras()!=null){
+        if (getIntent().getExtras() != null) {
             movie = (Movie) getIntent().getSerializableExtra("movie");
         }
         currentImage = findViewById(R.id.movie_image);
@@ -39,14 +39,15 @@ public class MovieInformationSecond extends AppCompatActivity {
         imdbButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             Intent myIntent = new Intent(v.getContext(), MovieInformationThird.class);
-             myIntent.putExtra("movie", movie);
-             startActivity(myIntent);
-            }});
+                Intent myIntent = new Intent(v.getContext(), MovieInformationThird.class);
+                myIntent.putExtra("movie", movie);
+                startActivity(myIntent);
+            }
+        });
         String imageName = movie.getImage();
         imageName = imageName.substring(0, imageName.indexOf("."));
 
-        int imageId = getBaseContext().getResources().getIdentifier(imageName,"drawable",getBaseContext().getPackageName());
+        int imageId = getBaseContext().getResources().getIdentifier(imageName, "drawable", getBaseContext().getPackageName());
         currentImage.setImageResource(imageId);
         currentTitle.setText(movie.getTitle());
         currentDuration.setText(movie.getDuration());

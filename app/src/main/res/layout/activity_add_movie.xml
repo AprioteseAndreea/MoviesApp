@@ -10,14 +10,15 @@
         android:id="@+id/add_movie_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:background="@color/black"
         android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:title="Marvel movies"
         app:titleTextColor="@color/white"
-        tools:context=".MainActivity"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+        tools:context=".MainActivity">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -27,136 +28,183 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:text="Add a new marvel movie"
-                android:textStyle="bold"
+                android:textColor="@color/white"
                 android:textSize="18sp"
-                android:textColor="@color/white"/>
-
-
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:backgroundTintMode="src_in"
+                app:icon="@drawable/ic_baseline_save_24" />
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/name_input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="90dp"
         android:layout_marginHorizontal="15dp"
-        app:startIconDrawable="@drawable/ic_baseline_local_movies_24"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        android:layout_marginTop="10dp"
+        android:hint="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_movie_toolbar"
+        app:startIconDrawable="@drawable/ic_baseline_local_movies_24">
 
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_text"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+            android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-    android:id="@+id/time_hour_input"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Duration - Hours"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/name_input"
-    android:layout_marginTop="25dp"
-    android:layout_marginHorizontal="15dp"
-    app:startIconDrawable="@drawable/ic_baseline_watch_later_24"
-    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
-    <AutoCompleteTextView
-        android:id="@+id/autoComplete_hour"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/time_hour_input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="none"
-        />
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:hint="Duration - Hours"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_input"
+        app:startIconDrawable="@drawable/ic_baseline_watch_later_24">
 
-</com.google.android.material.textfield.TextInputLayout>
+        <AutoCompleteTextView
+            android:id="@+id/autoComplete_hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/time_minutes_input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Duration - Minutes"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/time_hour_input"
-        android:layout_marginTop="25dp"
         android:layout_marginHorizontal="15dp"
-        app:startIconDrawable="@drawable/ic_baseline_watch_later_24"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        android:layout_marginTop="15dp"
+        android:hint="Duration - Minutes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time_hour_input"
+        app:startIconDrawable="@drawable/ic_baseline_watch_later_24">
 
         <AutoCompleteTextView
             android:id="@+id/autoComplete_minutes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="none"
-            />
+            android:inputType="none" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/year_input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Year"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/time_minutes_input"
-        android:layout_marginTop="25dp"
         android:layout_marginHorizontal="15dp"
-        app:startIconDrawable="@drawable/ic_baseline_calendar_today_24"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        android:layout_marginTop="15dp"
+        android:hint="Year"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time_minutes_input"
+        app:startIconDrawable="@drawable/ic_baseline_calendar_today_24">
 
         <AutoCompleteTextView
             android:id="@+id/autoComplete_year"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="none"
-            />
+            android:inputType="none" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/genre_input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Genre"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/year_input"
-        android:layout_marginTop="25dp"
         android:layout_marginHorizontal="15dp"
-        app:startIconDrawable="@drawable/ic_baseline_local_police_24"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        android:layout_marginTop="15dp"
+        android:hint="Genre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/year_input"
+        app:startIconDrawable="@drawable/ic_baseline_local_police_24">
 
         <MultiAutoCompleteTextView
             android:id="@+id/autoComplete_genre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="none"
-            />
+            android:inputType="none" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/description_input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Description"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/genre_input"
-        android:layout_marginTop="25dp"
         android:layout_marginHorizontal="15dp"
-        app:startIconDrawable="@drawable/ic_baseline_description_24"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        android:layout_marginTop="15dp"
+        android:hint="Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/genre_input"
+        app:startIconDrawable="@drawable/ic_baseline_description_24">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/description_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:lines="1"
-            />
+            android:lines="1" />
 
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/link_input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:hint="IMDB link"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description_input"
+        app:startIconDrawable="@drawable/ic_baseline_link_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/link_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/photo_input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:hint="Photo url"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/link_input"
+        app:startIconDrawable="@drawable/ic_baseline_camera_alt_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/photo_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

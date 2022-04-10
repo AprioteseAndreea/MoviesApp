@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.Toolbar
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
     android:background="@color/black"
     android:minHeight="?attr/actionBarSize"
-    android:layout_alignParentTop="true"
-    tools:context=".MainActivity"
-    android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/showevents"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:id="@+id/showevents"
-        android:textSize="12sp"
-        android:background="@null"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_gravity="end"
+        android:background="@null"
+        android:text="UPCOMING \nEVENTS"
         android:textColor="#FFF"
-        android:text="UPCOMING \nEVENTS"/>
+        android:textSize="12sp" />
 </androidx.appcompat.widget.Toolbar>
