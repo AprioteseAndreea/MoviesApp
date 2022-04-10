@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieInformationFirst"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/current_movie_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.6"
+        app:flow_horizontalBias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp"
+
+        />
+    <TextView
+        android:id="@+id/current_movie_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        app:flow_horizontalBias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_movie_image"
+        android:text="Batman"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        />
+    <TextView
+        android:id="@+id/current_movie_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.5"
+        android:textAlignment="textEnd"
+        android:paddingRight="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_movie_title"
+        android:text="2022"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        /><TextView
+        android:id="@+id/current_movie_duration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.5"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        app:flow_horizontalBias="0.5"
+        app:layout_constraintStart_toEndOf="@id/current_movie_year"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_movie_title"
+        android:text="2:56"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+    />
+    <Button
+        android:id="@+id/more_information"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_movie_year"
+        android:text="View more details"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/FlutterAps/MoviesApp/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.25" />
+        <entry key="..\:/FlutterAps/MoviesApp/app/src/main/res/drawable/ic_baseline_refresh_24.xml" value="0.23981481481481481" />
+        <entry key="..\:/FlutterAps/MoviesApp/app/src/main/res/drawable/photo_shadow.xml" value="0.25277777777777777" />
+        <entry key="..\:/FlutterAps/MoviesApp/app/src/main/res/layout-v28/movie_cell.xml" value="0.30180806675938804" />
+        <entry key="..\:/FlutterAps/MoviesApp/app/src/main/res/layout/activity_add_movie.xml" value="0.22" />
+        <entry key="..\:/FlutterAps/MoviesApp/app/src/main/res/layout/activity_main.xml" value="0.28157894736842104" />
+        <entry key="..\:/FlutterAps/MoviesApp/app/src/main/res/layout/activity_movie_information_first.xml" value="0.3088768115942029" />
+        <entry key="..\:/FlutterAps/MoviesApp/app/src/main/res/layout/activity_movie_information_second.xml" value="0.22" />
+        <entry key="..\:/FlutterAps/MoviesApp/app/src/main/res/layout/activity_movie_information_third.xml" value="0.22" />
+        <entry key="..\:/FlutterAps/MoviesApp/app/src/main/res/layout/dropdown_item.xml" value="0.6" />
+        <entry key="..\:/FlutterAps/MoviesApp/app/src/main/res/layout/movie_cell.xml" value="0.33539412673879443" />
+        <entry key="..\:/FlutterAps/MoviesApp/app/src/main/res/layout/toolbar.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

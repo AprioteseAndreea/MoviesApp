@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="movies.xsd" generated="2011-11-05T23:09:59">
+
+    <movie>
+        <title>Morbius</title>
+        <year>2022</year>
+        <duration>2:14</duration>
+        <type>Action, Adventure, Horror</type>
+        <description>Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease.</description>
+        <image>morbius.jpg</image>
+        <url>https://www.imdb.com/title/tt5108870/</url>
+    </movie>
+    <movie>
+        <title>Eternals</title>
+        <year>2021</year>
+        <duration>2:26</duration>
+        <type>Action, Adventure, Fantasy</type>
+        <description>Following the events of Avengers: Endgame (2019), an unexpected tragedy forces the Eternals, ancient aliens who have been living on Earth in secret for thousands of years, out of the shadows to reunite against mankind's most ancient enemy, the Deviants.</description>
+        <image>eternals.jpg</image>
+        <url>https://www.imdb.com/title/tt9032400/</url>
+    </movie>
+    <movie>
+        <title>Black Widow</title>
+        <year>2021</year>
+        <duration>2:14</duration>
+        <type>Action, Adventure, Sci-Fi</type>
+        <description>In Marvel Studios' action-packed spy thriller "Black Widow," Natasha Romanoff aka Black Widow confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.</description>
+        <image>blackwidow.jpg</image>
+        <url>https://www.imdb.com/title/tt1825683/</url>
+    </movie>
+    <movie>
+        <title>Captain Marvel</title>
+        <year>2019</year>
+        <duration>2:03</duration>
+        <type>Action, Adventure, Sci-Fi</type>
+        <description>After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls, Danvers begins to discover there's more to her past. With help from S.H.I.E.L.D. agent Nick Fury, they set out to unravel the truth.</description>
+        <image>captainmarvel.jpg</image>
+        <url>https://www.imdb.com/title/tt4154664/</url>
+    </movie>
+    <movie>
+        <title>Venom</title>
+        <year>2018</year>
+        <duration>1:52</duration>
+        <type>Action, Adventure, Sci-Fi</type>
+        <description>After a faulty interview with the Life Foundation ruins his career, former reporter Eddie Brock's life is in pieces. Six months later, he comes across the Life Foundation again, and he comes into contact with an alien symbiote and becomes Venom, a parasitic antihero.</description>
+        <image>venom.jpg</image>
+        <url>https://www.imdb.com/title/tt1270797/</url>
+    </movie>
+    <movie>
+        <title>Spider-Man: Homecoming</title>
+        <year>2017</year>
+        <duration>2:13</duration>
+        <type>Action, Adventure, Sci-Fi</type>
+        <description>A young Peter Parker/Spider-Man begins to navigate his newfound identity as the web-slinging super hero Spider-Man. Thrilled by his experience with the Avengers, Peter returns home, where he lives with his Aunt May, under the watchful eye of his new mentor Tony Stark. Peter tries to fall back into his normal daily routine - distracted by thoughts of proving himself to be more than just your friendly neighborhood Spider-Man - but when the Vulture emerges as a new villain, everything that Peter holds most important will be threatened.</description>
+        <image>spiderman.jpg</image>
+        <url>https://www.imdb.com/title/tt2250912/</url>
+    </movie>
+    <movie>
+        <title>Black Panther</title>
+        <year>2018</year>
+        <duration>2:14</duration>
+        <type>Action, Adventure, Sci-Fi</type>
+        <description>After the events of Captain America: Civil War, Prince T'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new king. However, T'Challa soon finds that he is challenged for the throne from factions within his own country. When two foes conspire to destroy Wakanda, the hero known as Black Panther must team up with C.I.A. agent Everett K. Ross and members of the Dora Milaje, Wakandan special forces, to prevent Wakanda from being dragged into a world war.</description>
+        <image>blackpanther.jpg</image>
+        <url>https://www.imdb.com/title/tt1825683/</url>
+    </movie>
+    <movie>
+        <title>Doctor Strange</title>
+        <year>2016</year>
+        <duration>1:55</duration>
+        <type>Action, Adventure, Fantasy</type>
+        <description>Marvel's "Doctor Strange" follows the story of the talented neurosurgeon Doctor Stephen Strange who, after a tragic car accident, must put ego aside and learn the secrets of a hidden world of mysticism and alternate dimensions. Based in New York City's Greenwich Village, Doctor Strange must act as an intermediary between the real world and what lies beyond, utilising a vast array of metaphysical abilities and artifacts to protect the Marvel Cinematic Universe.</description>
+        <image>doctorstrange.jpg</image>
+        <url>https://www.imdb.com/title/tt1211837/</url>
+    </movie>
+
+
+</dataroot>

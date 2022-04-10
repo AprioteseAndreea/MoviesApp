@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieInformationSecond"
+    android:background="@color/black">
+    <ImageView
+        android:id="@+id/movie_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp"
+
+        />
+    <TextView
+        android:id="@+id/movie_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/movie_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Spiderman: Homecoming"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:maxLines="3"
+        android:lines="2"
+
+        />
+    <TextView
+        android:id="@+id/movie_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.25"
+        android:textAlignment="textEnd"
+        android:paddingRight="10dp"
+        app:layout_constraintStart_toEndOf="@id/movie_image"
+        app:layout_constraintTop_toBottomOf="@id/movie_title"
+        android:text="2022"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+    <TextView
+    android:id="@+id/movie_duration"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintWidth_percent="0.25"
+    android:paddingLeft="10dp"
+    android:textAlignment="textStart"
+    app:layout_constraintStart_toEndOf="@id/movie_year"
+    app:layout_constraintTop_toBottomOf="@id/movie_title"
+    android:text="2:56"
+    android:textColor="@color/white"
+    android:textSize="20dp"
+    />
+    <TextView
+        android:id="@+id/movie_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.6"
+        android:textAlignment="textStart"
+        app:layout_constraintStart_toEndOf="@id/movie_image"
+        app:layout_constraintTop_toBottomOf="@id/movie_duration"
+        android:text="Action, Adventure, Sci-Fi"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:maxLines="3"
+        android:lines="2"
+        />
+    <TextView
+        android:id="@+id/movie_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.9"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toBottomOf="@id/movie_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Action, Adventure, Sci-Fi"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:maxLines="14"
+        android:lines="14"
+        android:scrollbars="vertical"
+        />
+    <Button
+        android:id="@+id/imdb_button"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movie_description"
+        android:text="See it on IMDB"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
