@@ -84,63 +84,55 @@ public class XMLMovieData {
             }
         }
 
-        //convert the new string into xml
         XMLWriter(newMovies);
 
     }
-    public void XMLWriter(Movie[] currentMovies)  {
-        try{
+
+    public void XMLWriter(Movie[] currentMovies) {
+        try {
             DocumentBuilderFactory documentFactory = DocumentBuilderFactory.newInstance();
-
             DocumentBuilder documentBuilder = documentFactory.newDocumentBuilder();
-
             Document document = documentBuilder.newDocument();
 
-            // root element
             Element root = document.createElement("dataroot");
             document.appendChild(root);
 
-            // employee element
 
-            for(int i = 0;i<currentMovies.length;i++){
+            for (Movie currentMovie : currentMovies) {
                 Element movie = document.createElement("movie");
 
                 Element title = document.createElement("title");
-                title.appendChild(document.createTextNode(currentMovies[i].getTitle()));
+                title.appendChild(document.createTextNode(currentMovie.getTitle()));
                 movie.appendChild(title);
 
                 Element year = document.createElement("year");
-                title.appendChild(document.createTextNode(currentMovies[i].getYear()));
+                title.appendChild(document.createTextNode(currentMovie.getYear()));
                 movie.appendChild(year);
 
                 Element duration = document.createElement("duration");
-                title.appendChild(document.createTextNode(currentMovies[i].getDuration()));
+                title.appendChild(document.createTextNode(currentMovie.getDuration()));
                 movie.appendChild(duration);
 
                 Element type = document.createElement("type");
-                title.appendChild(document.createTextNode(currentMovies[i].getType()));
+                title.appendChild(document.createTextNode(currentMovie.getType()));
                 movie.appendChild(type);
 
                 Element description = document.createElement("description");
-                title.appendChild(document.createTextNode(currentMovies[i].getDescription()));
+                title.appendChild(document.createTextNode(currentMovie.getDescription()));
                 movie.appendChild(description);
 
                 Element image = document.createElement("image");
-                title.appendChild(document.createTextNode(currentMovies[i].getImage()));
+                title.appendChild(document.createTextNode(currentMovie.getImage()));
                 movie.appendChild(image);
 
                 Element url = document.createElement("url");
-                title.appendChild(document.createTextNode(currentMovies[i].getUrl()));
+                title.appendChild(document.createTextNode(currentMovie.getUrl()));
                 movie.appendChild(url);
 
             }
             File file = new File("src/main/res/raw/movies.xml");
-
-
-            // get a file output stream ready
             FileOutputStream fileOutputStream = new FileOutputStream(file);
 
-            // use the serializer class to write it all
             Serializer serializer = new Serializer(fileOutputStream, "UTF-8");
             serializer.setIndent(3);
             serializer.write((nu.xom.Document) document);
@@ -149,6 +141,4 @@ public class XMLMovieData {
             pce.printStackTrace();
         }
     }
-
-
 }
